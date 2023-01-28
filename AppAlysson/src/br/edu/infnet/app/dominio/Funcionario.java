@@ -49,6 +49,7 @@ public class Funcionario {
 		return Constante.POBRE;
 	}
 	
+	//Criando method comum para preencher um arquivo nas classes filhas
 	public String obterStringSalarioPorFuncionario() {
 		
 		StringBuilder sb = new StringBuilder();
@@ -56,7 +57,7 @@ public class Funcionario {
 		sb.append(this.getNome());
 		sb.append(";");
 		sb.append(this.calcularSalarioLiquido());
-		sb.append("\r\n");
+		sb.append("\r\n");		
 
 		return sb.toString();
 	}
